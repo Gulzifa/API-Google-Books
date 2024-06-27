@@ -1,0 +1,59 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Bookshop web
+  script(defer='' src='main.js')
+  link(href='main.css' rel='stylesheet')
+header.header
+  .header__wrap
+    img.header__logo(src='/src/img/svg/Bookshop.svg' alt='Bookshop')
+    ul.header__nav
+      li.header__link books
+      li.header__link audiobooks
+      li.header__link Stationery &amp; gifts
+      li.header__link blog
+    .header__icons
+      img(src='/src/img/svg/user.svg' alt='user')
+      img(src='/src/img/svg/search.svg' alt='search')
+      img(src='/src/img/svg/shopbag.svg' alt='shopbag')
+      .header__cart
+        span.header__cart-counter
+.slider
+  .wrapper__images
+    img.slider__image.active-slide(src='/src/img/png/banner1.png' alt='sale')
+    img.slider__image(src='/src/img/png/banner2.png' alt='top10')
+    img.slider__image(src='/src/img/png/banner3.png' alt='selection')
+  .slider__dots
+.promo__change
+  p.promo__text Change old book on new
+  img.promo__arrow(src='/src/img/svg/arrow.svg' alt='arrow')
+.promo__top100
+  p.promo__text
+    | top 
+    br
+    |  100 books 2022
+  img.promo__arrow(src='/src/img/svg/arrow.svg' alt='arrow')
+button.categories__burger
+  img.burger-img(src='/src/img/svg/burger.svg' alt='menu')
+.categories
+  a.category-link.active(href='#' data-category='Architecture') Architecture
+  a.category-link(href='#' data-category='Art & Fashion') Art &amp; Fashion
+  a.category-link(href='#' data-category='Biography') Biography
+  a.category-link(href='#' data-category='Business') Business
+  a.category-link(href='#' data-category='Crafts & Hobbies') Crafts &amp; Hobbies
+  a.category-link(href='#' data-category='Drama') Drama
+  a.category-link(href='#' data-category='Fiction') Fiction
+  a.category-link(href='#' data-category='Food&Drink') Food &amp; Drink
+  a.category-link(href='#' data-category='Health&Wellbeing') Health &amp; Wellbeing
+  a.category-link(href='#' data-category='History&Politics') History &amp; Politics
+  a.category-link(href='#' data-category='Humor') Humor
+  a.category-link(href='#' data-category='Poetry') Poetry
+  a.category-link(href='#' data-category='Psychology') Psychology
+  a.category-link(href='#' data-category='Science') Science
+  a.category-link(href='#' data-category='Technology') Technology
+  a.category-link(href='#' data-category='Travel&Maps') Travel &amp; Maps
+.content
+  .books-wrap
+  button.btn__load-books load more
+script(type='module' src='index.js')
